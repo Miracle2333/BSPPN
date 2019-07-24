@@ -1,0 +1,110 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kang/Desktop/project_bsp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_62163/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62163.dir/build.make CMakeFiles/cmTC_62163.dir/build
+make[1]: Entering directory '/home/kang/Desktop/project_bsp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62163.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_62163.dir/CheckSymbolExists.c.o   -c /home/kang/Desktop/project_bsp/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_62163
+/usr/local/lib/python3.5/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62163.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     -rdynamic CMakeFiles/cmTC_62163.dir/CheckSymbolExists.c.o  -o cmTC_62163 
+CMakeFiles/cmTC_62163.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_62163.dir/build.make:86: recipe for target 'cmTC_62163' failed
+make[1]: *** [cmTC_62163] Error 1
+make[1]: Leaving directory '/home/kang/Desktop/project_bsp/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_62163/fast' failed
+make: *** [cmTC_62163/fast] Error 2
+
+File /home/kang/Desktop/project_bsp/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kang/Desktop/project_bsp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e8d8b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e8d8b.dir/build.make CMakeFiles/cmTC_e8d8b.dir/build
+make[1]: Entering directory '/home/kang/Desktop/project_bsp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e8d8b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e8d8b.dir/CheckFunctionExists.c.o   -c /usr/local/lib/python3.5/dist-packages/cmake/data/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e8d8b
+/usr/local/lib/python3.5/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8d8b.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e8d8b.dir/CheckFunctionExists.c.o  -o cmTC_e8d8b -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e8d8b.dir/build.make:86: recipe for target 'cmTC_e8d8b' failed
+make[1]: *** [cmTC_e8d8b] Error 1
+make[1]: Leaving directory '/home/kang/Desktop/project_bsp/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_e8d8b/fast' failed
+make: *** [cmTC_e8d8b/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e4141/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4141.dir/build.make CMakeFiles/cmTC_e4141.dir/build
+make[1]: Entering directory '/home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4141.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_e4141.dir/CheckSymbolExists.c.o   -c /home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e4141
+/usr/local/lib/python3.5/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4141.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     -rdynamic CMakeFiles/cmTC_e4141.dir/CheckSymbolExists.c.o  -o cmTC_e4141 
+CMakeFiles/cmTC_e4141.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e4141.dir/build.make:86: recipe for target 'cmTC_e4141' failed
+make[1]: *** [cmTC_e4141] Error 1
+make[1]: Leaving directory '/home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_e4141/fast' failed
+make: *** [cmTC_e4141/fast] Error 2
+
+File /home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0e370/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e370.dir/build.make CMakeFiles/cmTC_0e370.dir/build
+make[1]: Entering directory '/home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e370.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0e370.dir/CheckFunctionExists.c.o   -c /usr/local/lib/python3.5/dist-packages/cmake/data/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0e370
+/usr/local/lib/python3.5/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e370.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_0e370.dir/CheckFunctionExists.c.o  -o cmTC_0e370 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0e370.dir/build.make:86: recipe for target 'cmTC_0e370' failed
+make[1]: *** [cmTC_0e370] Error 1
+make[1]: Leaving directory '/home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_0e370/fast' failed
+make: *** [cmTC_0e370/fast] Error 2
+
+

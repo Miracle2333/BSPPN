@@ -1,0 +1,3 @@
+/home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/rebuild_cache.dir
+/home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/edit_cache.dir
+/home/kang/pytorch-mask-rcnn/BSP/CMakeFiles/project_bsp.dir
